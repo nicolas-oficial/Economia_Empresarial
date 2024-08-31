@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Lista de Tareas</h1>
+
+    <form id="todoForm">
+        <input type="text" id="taskInput" placeholder="Agregar tarea...">
+        <input type="number" id="priorityInput" placeholder="Prioridad (1-5)" min="1" max="5">
+        <button type="submit" class="add">Agregar</button>
+    </form>
+
+    <div class="button-container">
+        <button id="sortButton" class="sort">Ordenar por Prioridad</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
